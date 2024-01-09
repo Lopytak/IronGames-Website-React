@@ -1,0 +1,78 @@
+@import '../../scss/colors.scss';
+
+@keyframes navMove {
+    0% {padding: 4vw 2vw;}
+    100% {padding: 2vw 2vw;}
+}
+
+@keyframes navItemsOpacity {
+    0% {opacity: 0;}
+    25% {opacity: 0;}
+    50% {opacity: 0;}
+    75% {opacity: 0.5;}
+    100% {opacity: 1;}
+}
+
+@keyframes blueDivsMove {
+    0% {height: 0;}
+    100% {height: 2vw;}
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5vw;
+}
+
+.blueDiv {
+    height: 2vw;
+    background-color: $colorLightCyan;
+    animation: blueDivsMove 1s linear;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $colorLightCyan;
+
+    &__leftSide {
+        justify-content: end;
+    }
+    
+    &__rightSide {
+        justify-content: start;
+    }
+}
+
+.logo {
+    padding: 2vw 2vw;
+    width: 10vw;
+    background-color: $colorPurple;
+    animation: navMove 1s linear;
+    border-radius: 4.5vw;
+    cursor: pointer;
+}
+
+.navSide {
+    background-color: $colorPurple;
+    flex: 1;
+    display: flex;
+    padding: 2vw 2vw;
+    animation: navMove 1s linear;
+
+    &__item {
+        cursor: pointer;
+        letter-spacing: 0.1vw;
+        animation: navItemsOpacity 1.5s linear;
+        text-decoration: none;
+        color: $colorWhite;
+        font-size: 1.2vw;
+        font-weight: 700;
+
+        &:hover {
+            color: $colorOrange;
+        }
+    }
+}
+

@@ -1,0 +1,13 @@
+@import '../scss/mixins.scss';
+
+.wrapper {
+    @include flexColumn;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    margin: 10vw 5vw;
+    justify-content: space-between;
+    align-items: center;
+}

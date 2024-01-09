@@ -1,0 +1,40 @@
+@import '../../scss/mixins.scss';
+@import '../../scss/colors.scss';
+
+
+.form {
+    @include form;
+
+    &__header {
+        @include formHeader;
+    }
+
+    &__label {
+        @include formLabel;
+    }
+
+    &__input {
+        @include formInput;
+
+        &_error {
+            border: 0.15vw solid $colorRed;
+        }
+    }
+
+    &__select {
+        @include formSelect;
+    }
+
+    &__button {
+        @include formButton;
+
+        &:hover {
+            background-color: $colorLightGreen;
+        }
+
+        &:focus {
+            border: 0.2vw solid $colorPurple;
+        }
+    }
+
+}

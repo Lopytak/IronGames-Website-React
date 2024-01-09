@@ -1,0 +1,48 @@
+@keyframes gradientBluePurple {
+    0% {
+        background-position: -10% 0%;
+    }
+    50% {
+        background-position: 110% 100%;
+    }
+    100% {
+        background-position: -10% 0%;
+    }
+}
+
+.footer {
+    display: grid;
+    grid-template-rows: 5vw 5vw;
+    justify-items: center;
+    align-items: center;
+    background: linear-gradient(90deg, #E6FAFF 50%,#F3E1FF 50%);
+    border-radius: 4vw;
+    margin: 0 5vw 5vw 5vw;
+    animation: gradientBluePurple 10s linear infinite;
+    background-size: 200% 200%;
+    letter-spacing: 0.05vw;
+    padding: 2vw;
+    font-size: 1.2vw;
+
+    &__header {
+        font-weight: 700;
+    }
+
+    &__inner {
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        justify-content: center;
+        column-gap: 10vw;
+    }
+}
+
+.contacts {
+    margin: 0.5vw 0 0;
+
+    &__logo {
+        width: 2vw;
+        height: 2vw;
+        margin: 0 0.2vw;
+        cursor: pointer;
+    }
+}

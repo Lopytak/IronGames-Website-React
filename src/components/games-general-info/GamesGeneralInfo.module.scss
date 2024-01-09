@@ -1,0 +1,41 @@
+@import '../scss/colors.scss';
+
+.gamesGeneralInfo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    justify-items: center;
+    margin: 5vw;
+    gap: 2vw 2vw;
+}
+
+.previewItem {
+    display: grid;
+    grid-template-rows: auto auto;
+    justify-items: center;
+    cursor: pointer;
+    padding: 1vw 2vw;
+    transition: box-shadow 0.3s, background-color 0.6s, color 0.6s;
+    border-radius: 2vw;
+    font-weight: 700;
+    letter-spacing: 0.1vw;
+    text-decoration: none;
+    color: $colorGreen;
+
+    &:hover {
+        box-shadow: 0px 0px 10px 5px #00000033;
+        background-color: #948BC0;
+        color: $colorOrange;
+    }
+
+    &__image {
+        width: 10vw;
+        height: 10vw;
+        border-radius: 2vw;
+    }
+    
+    &__title {
+        margin: 1vw 0;
+        font-size: 1.2vw;
+    }
+}

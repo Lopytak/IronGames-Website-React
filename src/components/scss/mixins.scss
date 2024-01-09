@@ -1,0 +1,62 @@
+@import './colors.scss';
+
+@mixin form {
+    display: flex;
+    flex-direction: column;
+    min-width: 20vw;
+    background-color: $colorLightCyan;
+    padding: 2vw 5vw;
+    border-radius: 2vw;
+    border: 0.3vw solid $colorPurple;
+}
+
+@mixin formHeader {
+    text-align: center;
+    font-size: 1.6vw;
+    font-weight: 700;
+    color: $colorGreen;
+    letter-spacing: 0.1vw;
+    margin: 1vw;
+}
+
+@mixin formLabel {
+    color: $colorGray;
+    margin: 0.5vw 0;
+    font-size: 1vw;
+}
+
+@mixin formInput {
+    padding: 1vw;
+    font-size: 1.2vw;
+    border-radius: 1vw;
+    border: 0.15vw solid transparent;
+    outline: none;
+}
+
+@mixin formSelect {
+    font-size: 1.2vw;
+}
+
+@mixin formButton {
+    appearance: none;
+    margin: 3vw 0 0;
+    background-color: $colorGreen;
+    color: $colorWhite;
+    font-weight: 700;
+    font-size: 1.2vw;
+    padding: 1vw;
+    border: 0;
+    border-radius: 2vw;
+    border: 0.2vw solid transparent;
+    cursor: pointer;
+}
+
+@mixin formInputErrorMessage {
+    color: $colorRed;
+    font-size: 1vw;
+}
+
+@mixin flexColumn {
+    display: flex;
+    flex-direction: column;
+}
