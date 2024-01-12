@@ -1,4 +1,4 @@
-@import '../../scss/colors.scss';
+@use '../../../sass/abstracts' as i;
 
 @keyframes navMove {
     0% {padding: 4vw 2vw;}
@@ -26,7 +26,7 @@
 
 .blueDiv {
     height: 2vw;
-    background-color: $colorLightCyan;
+    background-color: i.$colorLightCyan;
     animation: blueDivsMove 1s linear;
 }
 
@@ -34,7 +34,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: $colorLightCyan;
+    background-color: i.$colorLightCyan;
 
     &__leftSide {
         justify-content: end;
@@ -48,14 +48,14 @@
 .logo {
     padding: 2vw 2vw;
     width: 10vw;
-    background-color: $colorPurple;
+    background-color: i.$colorPurple;
     animation: navMove 1s linear;
     border-radius: 4.5vw;
     cursor: pointer;
 }
 
 .navSide {
-    background-color: $colorPurple;
+    background-color: i.$colorPurple;
     flex: 1;
     display: flex;
     padding: 2vw 2vw;
@@ -66,12 +66,12 @@
         letter-spacing: 0.1vw;
         animation: navItemsOpacity 1.5s linear;
         text-decoration: none;
-        color: $colorWhite;
+        color: i.$colorWhite;
         font-size: 1.2vw;
         font-weight: 700;
 
         &:hover {
-            color: $colorOrange;
+            color: i.$colorOrange;
         }
     }
 }

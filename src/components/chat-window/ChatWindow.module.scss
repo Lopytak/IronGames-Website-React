@@ -1,5 +1,4 @@
-@import '../scss/mixins.scss';
-@import '../scss/colors.scss';
+@use '../../sass/abstracts' as i;
 
 .chatWindowWrapper {
     position: absolute;
@@ -17,7 +16,7 @@
     align-items: center;
     column-gap: 1.5vw;
     padding: 1vw;
-    background-color: $colorWhite;
+    background-color: i.$colorWhite;
     cursor: pointer;
     border-radius: 1vw 1vw 0 0;
 
@@ -53,7 +52,7 @@
     }
 
     &__scroll {
-        @include flexColumn;
+        @extend %flexColumn;
     }
 }
 
@@ -69,11 +68,11 @@
 .myMessage {
     display: flex;
     align-self: flex-end;
-    background-color: $colorLightCyan;
+    background-color: i.$colorLightCyan;
 }
 
 .companionMessage {
-    background-color: $colorLavender;
+    background-color: i.$colorLavender;
     align-self: flex-start;
 }
 
@@ -84,7 +83,7 @@
     justify-content: space-between;
     border-radius: 0 0 1vw 1vw;
     padding: 1.5vw;
-    background-color: $colorWhite;
+    background-color: i.$colorWhite;
 
     &__input {
         border: 0;

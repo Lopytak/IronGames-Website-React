@@ -1,3 +1,5 @@
+@use '../../../sass/abstracts' as i;
+
 @keyframes gradientBluePurple {
     0% {
         background-position: -10% 0%;
@@ -11,15 +13,14 @@
 }
 
 .footer {
+    @include i.gradientAnimation(90deg, i.$colorLightCyan, i.$colorLavender);
+
     display: grid;
     grid-template-rows: 5vw 5vw;
     justify-items: center;
     align-items: center;
-    background: linear-gradient(90deg, #E6FAFF 50%,#F3E1FF 50%);
     border-radius: 4vw;
     margin: 0 5vw 5vw 5vw;
-    animation: gradientBluePurple 10s linear infinite;
-    background-size: 200% 200%;
     letter-spacing: 0.05vw;
     padding: 2vw;
     font-size: 1.2vw;

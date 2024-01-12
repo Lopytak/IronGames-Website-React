@@ -1,5 +1,5 @@
-@import '../../scss/mixins.scss';
+@use '../../../sass/abstracts' as i;
 
 .errorMessage {
-    @include formInputErrorMessage;
+    @extend %formInputErrorMessage;
 }

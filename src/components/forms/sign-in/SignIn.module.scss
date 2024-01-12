@@ -1,39 +1,38 @@
-@import '../../scss/mixins.scss';
-@import '../../scss/colors.scss';
+@use '../../../sass/abstracts' as i;
 
 
 .form {
-    @include form;
+    @extend %form;
 
     &__header {
-        @include formHeader;
+        @extend %formHeader;
     }
 
     &__label {
-        @include formLabel;
+        @extend %formLabel;
     }
 
     &__input {
-        @include formInput;
+        @extend %formInput;
 
         &_error {
-            border: 0.15vw solid $colorRed;
+            border: 0.15vw solid i.$colorRed;
         }
     }
 
     &__select {
-        @include formSelect;
+        @extend %formSelect;
     }
 
     &__button {
-        @include formButton;
+        @extend %formButton;
 
         &:hover {
-            background-color: $colorLightGreen;
+            background-color: i.$colorLightGreen;
         }
 
         &:focus {
-            border: 0.2vw solid $colorPurple;
+            border: 0.2vw solid i.$colorPurple;
         }
     }
 

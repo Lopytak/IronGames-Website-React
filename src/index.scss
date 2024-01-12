@@ -1,4 +1,4 @@
-@import './components/scss/colors.scss';
+@use './sass/abstracts/' as i;
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -10,6 +10,5 @@ body {
   box-sizing: 0;
   display: flex;
   flex-direction: column;
-  background-color: $colorModeratePurple;
-   /* place-items: center; */
+  background-color: i.$colorModeratePurple;
 }

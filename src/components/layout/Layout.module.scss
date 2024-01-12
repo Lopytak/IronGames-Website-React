@@ -1,7 +1,7 @@
-@import '../scss/mixins.scss';
+@use '../../sass/abstracts' as i;
 
 .wrapper {
-    @include flexColumn;
+    @extend %flexColumn;
 }
 
 .main {

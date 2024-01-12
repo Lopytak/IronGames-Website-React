@@ -1,4 +1,4 @@
-@import '../scss/colors.scss';
+@use '../../sass/abstracts' as i;
 
 .gamesGeneralInfo {
     display: grid;
@@ -20,12 +20,12 @@
     font-weight: 700;
     letter-spacing: 0.1vw;
     text-decoration: none;
-    color: $colorGreen;
+    color: i.$colorGreen;
 
     &:hover {
         box-shadow: 0px 0px 10px 5px #00000033;
         background-color: #948BC0;
-        color: $colorOrange;
+        color: i.$colorOrange;
     }
 
     &__image {
