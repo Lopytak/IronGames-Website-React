@@ -1,0 +1,36 @@
+@use '../../../sass/abstracts' as i;
+
+@keyframes gradientBluePurple {
+    0% {
+        background-position: -10% 110%;
+    }
+    50% {
+        background-position: 110% -10%;
+    }
+    100% {
+        background-position: -10% 110%;
+    }
+}
+
+.chatList {
+    @extend %flexColumn;
+    @extend %sideBar;
+    @include i.gradientAnimation(0deg, i.$colorLavender, i.$colorLightCyan);
+
+    &__button {
+        @include i.sideBarButton(i.$colorBlue);
+
+        &:hover {
+            color: i.$colorOrange;
+        }
+    }
+}
+
+.previewImage {
+    @extend %sideBarElement;
+
+    &:hover {
+        border: 0.2vw solid i.$colorBlack;
+    }
+}
+

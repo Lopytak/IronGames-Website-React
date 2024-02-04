@@ -1,0 +1,17 @@
+@use '../../sass/abstracts' as i;
+
+.wrapper {
+    @extend %flexColumn;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    margin: 10vw 5vw;
+    justify-content: space-between;
+    align-items: center;
+
+    .centralChild:only-child {
+        margin: auto;
+    }
+}

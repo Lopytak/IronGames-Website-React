@@ -1,0 +1,80 @@
+@use 'colors' as c;
+
+%form {
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    background-color: c.$colorLightCyan;
+    padding: 2vw 5vw;
+    border-radius: 2vw;
+    border: 0.3vw solid c.$colorPurple;
+}
+
+%formHeader {
+    text-align: center;
+    font-size: 1.6vw;
+    font-weight: 700;
+    color: c.$colorGreen;
+    letter-spacing: 0.1vw;
+    margin: 1vw;
+}
+
+%formLabel {
+    color: c.$colorGray;
+    margin: 0.5vw 0;
+    font-size: 1vw;
+}
+
+%formInput {
+    padding: 1vw;
+    font-size: 1.2vw;
+    border-radius: 1vw;
+    border: 0.15vw solid transparent;
+    outline: none;
+}
+
+%formSelect {
+    font-size: 1.2vw;
+}
+
+%formButton {
+    appearance: none;
+    margin: 3vw 0 0;
+    background-color: c.$colorGreen;
+    color: c.$colorWhite;
+    font-weight: 700;
+    font-size: 1.2vw;
+    padding: 1vw;
+    border: 0;
+    border-radius: 2vw;
+    border: 0.2vw solid transparent;
+    cursor: pointer;
+}
+
+%formInputErrorMessage {
+    color: c.$colorRed;
+    font-size: 1vw;
+}
+
+%flexColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+%sideBar {
+    border-radius: 4vw;
+    height: 100%;
+    align-items: center;
+    width: 7vw;
+    padding: 1.5vw 0 0;
+    overflow-y: hidden;
+    align-self: end;
+}
+
+%sideBarElement {
+    width: 4vw;
+    height: 4vw;
+    border-radius: 5vw;
+    margin: 0.5vw 0;
+    border: 0.2vw solid transparent;
+}
